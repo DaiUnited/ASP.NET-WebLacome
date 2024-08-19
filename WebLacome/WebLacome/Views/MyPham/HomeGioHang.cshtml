@@ -1,0 +1,114 @@
+﻿
+@{
+    ViewBag.Title = "HomeGioHang";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+
+
+@using WebLacome.Models;
+@model List<GioHang>
+<style>
+    .cart-info img{
+        width:30%;
+    }
+    .thongtin input {
+        font-size: 1.1rem;
+    }
+
+    .thongtin select {
+        width: 100%;
+        height: 3rem;
+        font-size: 1.1rem;
+    }
+    table ,th,tr,td{
+        /*border:1px solid black;*/
+    }
+    td,th{
+        padding:20px;
+    }
+    button:active, button:hover {
+        outline: 0;
+    }
+</style>
+<div style="padding:2rem 6rem;">
+    <div class="form-control" style=" ">
+        @if (Model.Any())
+{
+    <table class="table table-sm" style="border:none;">
+        <tr>
+            <th>Sản phẩm</th>
+            <th>Đơn giá</th>
+            <th>Số lượng</th>
+            <th>Thành tiền</th>
+            <th>Thao tác</th>
+        </tr>
+        @{
+    double sum = 0;
+        }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <div class="checksp">
+                            <input type="checkbox" checked="checked">
+                        </div>
+                        <a href="~/MyPham/Details?MAMP=@item.MAMP">
+                            <img style="max-width:15%;" src="~/Areas/Admin/Content/image/@item.ANH">
+                        </a>
+                        <div>
+                            <p>@item.TENMP</p>
+                        </div>
+                    </div>
+                </td>
+                <td>@item.GIA VNĐ</td>
+                <form action="/MyPham/UpdateSoLuongGH?MAMP=@item.MAMP" method="post">
+                    <td><input style="width:3rem;" type="number" value="@item.SOLUONG" min="1" name="SoLuong"></td>
+
+                    <td>@item.THANHTIEN VNĐ</td>
+                    <td>
+                        <a href="/MyPham/DeleteGioHang?MAMP=@item.MAMP">
+                            <img style="max-width:20px;" src="~/Content/icon/x.png" alt="Alternate Text" />
+                        </a>
+                        <button class="btn" type="submit">
+                            <img style="max-width:20px;" src="~/Content/icon/refresh.png" alt="Alternate Text" />
+                        </button>
+                    </td>
+
+                </form>
+            </tr>
+            sum += item.GIA * item.SOLUONG;
+        }
+        <tr style="font-size:20px">
+            <td style="padding-left:5%;padding-right:10%" colspan="3"><b>TỔNG THÀNH TIỀN</b> </td>
+            <td style="padding-right:2%; color:red " colspan="2"><b>@sum VNĐ</b> </td>
+        </tr>
+    </table>
+                    <div style="right;">
+                <a href="/MyPham/XuLyThanhToan" id="btnThanhToan"><button style="align-items: center; background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); border: 0; border-radius: 8px; box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px; box-sizing: border-box; color: #FFFFFF; display: flex; font-family: Phantomsans, sans-serif; font-size: 20px; justify-content: center; line-height: 1em; max-width: 100%; min-width: 140px; padding: 19px 24px; text-decoration: none; user-select: none; -webkit-user-select: none; touch-action: manipulation; white-space: nowrap; cursor: pointer;">Thanh Toán</button></a>
+            </div>
+}
+        else
+        {
+            <h2 style="text-align:center;padding:3rem 0;">GIỎ HÀNG CỦA BẠN ĐANG TRỐNG</h2>
+        }
+    </div>
+</div>
+
+
+
+
+<div class="button-giohang">
+    <a href="/MyPham/ShowProducts"><button class="button1"> &#8592; tiếp tục xem sản phẩm</button></a>
+    <a href="/MyPham/HomeGioHang"><button class="button2">cập nhật giỏ hàng</button></a>
+</div>
+
+
+
+
+
+
+
+
+

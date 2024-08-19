@@ -1,0 +1,106 @@
+﻿@model WebLacome.Areas.Admin.Models.TaiKhoan
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<main id="auth">
+    <section class="vh-100">
+        <div class="container h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100 ">
+                <div class="col-lg-12 col-xl-11">
+                    <div class="card text-black rounded-30">
+                        <div class="card-body p-md-3">
+                            @using (Html.BeginForm())
+                            {
+                                <div class="row justify-content-center">
+                                    <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+                                        <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Đăng Ký</p>
+
+                                        <div class="mx-1 mx-md-4">
+
+                                            <div class="mb-4">
+                                                <div class="form-outline flex-fill mb-0">
+                                                    <label class="form-label" for="form3Example1c">Tên người dùng</label>
+                                                    @Html.TextBoxFor(m => m.HOTEN, new { placeholder = "VD: Mi Chan", @class = "form-control" })
+                                                    @Html.ValidationMessageFor(m => m.HOTEN, "", new { @class = "text-danger" })
+
+                                                </div>
+                                            </div>
+                                            <div class="mb-4">
+                                                <div class="form-outline flex-fill mb-0">
+                                                    <label class="form-label" for="form3Example4cd">
+                                                        Email
+                                                    </label>
+                                                    @Html.TextBoxFor(m => m.EMAIL, new { type = "text", placeholder = "VD: mimichan18@gmail.com", @class = "form-control" })
+                                                    @Html.ValidationMessageFor(m => m.EMAIL, "", new { @class = "text-danger" })
+
+                                                </div>
+                                            </div>
+                                            <div class="mb-4">
+                                                <div class="form-outline flex-fill mb-0">
+                                                    <label class="form-label" for="form3Example3c">Tên Đăng Nhập</label>
+                                                    @Html.TextBoxFor(m => m.TENDN, new { placeholder = "VD: ten dang nhap", @class = "form-control" })
+                                                    @Html.ValidationMessageFor(m => m.TENDN, "", new { @class = "text-danger" })
+
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-4">
+                                                <div class="form-outline flex-fill mb-0">
+                                                    <label class="form-label" for="form3Example4c">Mật khẩu</label>
+                                                    @Html.TextBoxFor(m => m.MATKHAU, new { type = "password", placeholder = "VD: mimichan18", @class = "form-control" })
+                                                    @Html.ValidationMessageFor(m => m.MATKHAU, "", new { @class = "text-danger" })
+
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-4">
+                                                <div class="form-outline flex-fill mb-0">
+                                                    <label class="form-label" for="form3Example4cd">
+                                                        Xác nhận mật khẩu
+                                                    </label>
+                                                    @Html.TextBoxFor(m => m.XACNHANMK, new { type = "password", placeholder = "VD: mimichan18", @class = "form-control" })
+                                                    @Html.ValidationMessageFor(m => m.XACNHANMK, "", new { @class = "text-danger" })
+
+                                                </div>
+                                            </div>
+
+                                            <p class="text-danger mb-4 text-center">
+                                                @ViewBag.AccountExistedError
+                                            </p>
+
+                                            <div class="d-flex justify-content-center mb-3 mb-lg-4">
+                                                <button type="submit"
+                                                        class="w-100 btn bg-dark text-white btn-lg" style="font-weight:500;">
+                                                    Tạo tài khoản
+                                                </button>
+                                            </div>
+
+                                            <div class="py-2 border-0">
+                                                <div class="text-center">
+                                                    Bạn đã có tài khoản? <a href="/User/DangNhap"
+                                                                            class="text-primary">Đăng nhập</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+
+                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
+                                             class="img-fluid" alt="Sample image">
+
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

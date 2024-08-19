@@ -1,0 +1,113 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <title>Đăng Nhập</title>
+    <link href="~/Content/User/css/styleDangNhap.css" rel="stylesheet" type="text/css" />
+    <style>
+        .loi {
+            color: red;
+            text-align: left
+        }
+    </style>
+</head>
+<body>
+    <form action="/MyPham/DangNhap" method="post">
+        <div class="formDangNhap" style="background-image: url(/Content/User/image/bgdangnhap.jpg);">
+            <div class=" form" id="signin-form">
+                <a href="/HomePage/PageHome" class="form-logo">
+                    <img src="/Content/User/image/LogoVascara.png" alt="Dung Mobile">
+                </a>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" id="Email" name="Email" class="form-input" value="@ViewBag.Email" />
+                    <p class="loi">@ViewBag.LoiEmail</p>
+                    <span class="form-input-icon err">
+                        <i class='bx bx-error-circle'></i>
+                    </span>
+                    <span class="form-input-icon success">
+                        <i class='bx bx-check-circle'></i>
+                    </span>
+                    <span class="form-input-err-msg" data-err-for="signin-email"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Tên Đăng Nhập" id="TenDN" name="UserName" class="form-input" value="@ViewBag.UserName" />
+                    <p class="loi">@ViewBag.LoiUserName</p>
+                    <span class="form-input-icon err">
+                        <i class='bx bx-error-circle'></i>
+                    </span>
+                    <span class="form-input-icon success">
+                        <i class='bx bx-check-circle'></i>
+                    </span>
+                    <span class="form-input-err-msg" data-err-for="signin-email"></span>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-input" placeholder="Mật Khẩu" name="Password" id="MatKhau" value="@ViewBag.Password" />
+                    <p class="loi">@ViewBag.LoiPassword</p>
+                    <span class="form-input-icon err">
+                        <i class='bx bx-error-circle'></i>
+                    </span>
+                    <span class="form-input-icon success">
+                        <i class='bx bx-check-circle'></i>
+                    </span>
+                    <span class="form-input-err-msg" data-err-for="signin-password"></span>
+                </div>
+                <div class="form-group form-group-checkbox">
+                    <input type="checkbox" name="remember" id="remember" checked="checked">
+                    <label for="remember">
+                        Nhớ mật khẩu
+                        <i class='bx bx-check'></i>
+                    </label>
+                    <p class="loi">@ViewBag.LoiDangNhap</p>
+                </div>
+                <button class="form-btn" id="signin-btn">Đăng nhập</button>
+                @*if ( ==0)
+                    {
+                        <p>Sai thông tin đăng nhập</p>
+                    }*@
+
+                <span class="form-delimiter">
+                    Hoặc bạn có thể đăng nhập bằng
+                </span>
+                <div class="form-social">
+                    <a href="https://www.facebook.com/" class="form-social-item fb">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="#" class="form-social-item tw">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                    <a href="https://www.google.com/gmail/about/" class="form-social-item gg">
+                        <i class='bx bxl-google'></i>
+                    </a>
+                </div>
+                <span class="form-txt">
+                    Bên chưa có tài khoản?
+                    <a href="/HomePage/DangKy">Đăng Ký</a>
+                </span>
+                <span class="form-txt">
+                    <a href="/HomePage/ForgotPass">Quên mật khẩu</a>
+                </span>
+                <span class="form-txt">
+                    <a href="/HomePage/PageHome">Trang Chủ</a>
+                </span>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3BF17C3C-7B5D-4315-BD5D-2058CD5A832A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebLacome</RootNamespace>
+    <AssemblyName>WebLacome</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.1.0.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.1.0.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.1.0.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.2.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.2.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.0.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.2.0.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.2.0.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.2.0.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeAdminController.cs" />
+    <Compile Include="Areas\Admin\Models\CHITIETHOADON.cs" />
+    <Compile Include="Areas\Admin\Models\ConnectCTHD.cs" />
+    <Compile Include="Areas\Admin\Models\ConnectHoaDon.cs" />
+    <Compile Include="Areas\Admin\Models\ConnectKhachHang.cs" />
+    <Compile Include="Areas\Admin\Models\ConnectLoaiMP.cs" />
+    <Compile Include="Areas\Admin\Models\ConnectProduct.cs" />
+    <Compile Include="Areas\Admin\Models\ConnectSQL.cs" />
+    <Compile Include="Areas\Admin\Models\DiaChi.cs" />
+    <Compile Include="Areas\Admin\Models\HOADON.cs" />
+    <Compile Include="Areas\Admin\Models\KHACHHANG.cs" />
+    <Compile Include="Areas\Admin\Models\LOAIMP.cs" />
+    <Compile Include="Areas\Admin\Models\LoginVaiTro.cs" />
+    <Compile Include="Areas\Admin\Models\MYPHAM.cs" />
+    <Compile Include="Areas\Admin\Models\TaiKhoan.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MyPhamController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\connectGioHang.cs" />
+    <Compile Include="Models\ConnectLoaiMP.cs" />
+    <Compile Include="Models\ConnectMyPham.cs" />
+    <Compile Include="Models\GioHang.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ImageHelper.cs" />
+    <Compile Include="Models\LoaiMP.cs" />
+    <Compile Include="Models\MyPham.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserDB.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Content\image\cl001.jpg" />
+    <Content Include="Areas\Admin\Content\image\cl002.jpg" />
+    <Content Include="Areas\Admin\Content\image\cl003.jpg" />
+    <Content Include="Areas\Admin\Content\image\cl004.jpg" />
+    <Content Include="Areas\Admin\Content\image\cl005.jpg" />
+    <Content Include="Areas\Admin\Content\image\cl006.jpg" />
+    <Content Include="Areas\Admin\Content\image\cl011.jpg" />
+    <Content Include="Areas\Admin\Content\image\cl012.jpg" />
+    <Content Include="Areas\Admin\Content\image\cl013.jpg" />
+    <Content Include="Areas\Admin\Content\image\cr001.jpg" />
+    <Content Include="Areas\Admin\Content\image\cr002.jpg" />
+    <Content Include="Areas\Admin\Content\image\cr003.jpg" />
+    <Content Include="Areas\Admin\Content\image\cr011.jpg" />
+    <Content Include="Areas\Admin\Content\image\cr012.jpg" />
+    <Content Include="Areas\Admin\Content\image\cr013.jpg" />
+    <Content Include="Areas\Admin\Content\image\cr111.jpg" />
+    <Content Include="Areas\Admin\Content\image\cr222.jpg" />
+    <Content Include="Areas\Admin\Content\image\cr333.jpg" />
+    <Content Include="Areas\Admin\Content\image\nh001.jpg" />
+    <Content Include="Areas\Admin\Content\image\nh002.jpg" />
+    <Content Include="Areas\Admin\Content\image\nh003.jpg" />
+    <Content Include="Areas\Admin\Content\image\son001.jpg" />
+    <Content Include="Areas\Admin\Content\image\son002.jpg" />
+    <Content Include="Areas\Admin\Content\image\son003.jpg" />
+    <Content Include="Areas\Admin\Content\image\sr001.jpg" />
+    <Content Include="Areas\Admin\Content\image\sr002.jpg" />
+    <Content Include="Areas\Admin\Content\image\sr003.jpg" />
+    <Content Include="Areas\Admin\Content\image\sr004.jpg" />
+    <Content Include="Areas\Admin\Content\image\sr005.jpg" />
+    <Content Include="Areas\Admin\Content\image\sr006.jpg" />
+    <Content Include="Areas\Admin\Content\image\sr011.jpg" />
+    <Content Include="Areas\Admin\Content\image\sr012.jpg" />
+    <Content Include="Areas\Admin\Content\image\sr013.jpg" />
+    <Content Include="Areas\Admin\Content\image\sr014.jpg" />
+    <Content Include="Areas\Admin\Content\image\sr015.jpg" />
+    <Content Include="Areas\Admin\Content\image\sr016.jpg" />
+    <Content Include="Areas\Admin\Content\image\tc001.jpg" />
+    <Content Include="Areas\Admin\Content\image\tc002.jpg" />
+    <Content Include="Areas\Admin\Content\image\tc003.jpg" />
+    <Content Include="Assets\Admin\assets\demo\chart-area-demo.js" />
+    <Content Include="Assets\Admin\assets\demo\chart-bar-demo.js" />
+    <Content Include="Assets\Admin\assets\demo\chart-pie-demo.js" />
+    <Content Include="Assets\Admin\assets\demo\datatables-demo.js" />
+    <Content Include="Assets\Admin\assets\img\error-404-monochrome.svg" />
+    <Content Include="Assets\Admin\css\styles.css" />
+    <Content Include="Assets\Admin\js\datatables-simple-demo.js" />
+    <Content Include="Assets\Admin\js\scripts.js" />
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\Antlr3.Runtime.pdb" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\EntityFramework.xml" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Core.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Core.xml" />
+    <Content Include="bin\Microsoft.AspNet.Identity.EntityFramework.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.EntityFramework.xml" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Owin.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Owin.xml" />
+    <Content Include="bin\Microsoft.Owin.dll" />
+    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.dll" />
+    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.Cookies.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Cookies.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Facebook.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Facebook.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.Google.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Google.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.MicrosoftAccount.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.MicrosoftAccount.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.OAuth.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.OAuth.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.Twitter.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Twitter.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.xml" />
+    <Content Include="bin\Microsoft.Owin.xml" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\Owin.dll" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Helpers.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Optimization.xml" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.xml" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.xml" />
+    <Content Include="bin\WebGrease.dll" />
+    <Content Include="bin\WebLacome.dll" />
+    <Content Include="bin\WebLacome.pdb" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\HinhAnhSP\cl001.jpg" />
+    <Content Include="Content\HinhAnhSP\cl002.jpg" />
+    <Content Include="Content\HinhAnhSP\cl003.jpg" />
+    <Content Include="Content\HinhAnhSP\cl004.jpg" />
+    <Content Include="Content\HinhAnhSP\cl005.jpg" />
+    <Content Include="Content\HinhAnhSP\cl006.jpg" />
+    <Content Include="Content\HinhAnhSP\cl011.jpg" />
+    <Content Include="Content\HinhAnhSP\cl012.jpg" />
+    <Content Include="Content\HinhAnhSP\cl013.jpg" />
+    <Content Include="Content\HinhAnhSP\cr001.jpg" />
+    <Content Include="Content\HinhAnhSP\cr002.jpg" />
+    <Content Include="Content\HinhAnhSP\cr003.jpg" />
+    <Content Include="Content\HinhAnhSP\cr011.jpg" />
+    <Content Include="Content\HinhAnhSP\cr012.jpg" />
+    <Content Include="Content\HinhAnhSP\cr013.jpg" />
+    <Content Include="Content\HinhAnhSP\cr111.jpg" />
+    <Content Include="Content\HinhAnhSP\cr222.jpg" />
+    <Content Include="Content\HinhAnhSP\cr333.jpg" />
+    <Content Include="Content\HinhAnhSP\nh001.jpg" />
+    <Content Include="Content\HinhAnhSP\nh002.jpg" />
+    <Content Include="Content\HinhAnhSP\nh003.jpg" />
+    <Content Include="Content\HinhAnhSP\son001.jpg" />
+    <Content Include="Content\HinhAnhSP\son002.jpg" />
+    <Content Include="Content\HinhAnhSP\son003.jpg" />
+    <Content Include="Content\HinhAnhSP\sr001.jpg" />
+    <Content Include="Content\HinhAnhSP\sr002.jpg" />
+    <Content Include="Content\HinhAnhSP\sr003.jpg" />
+    <Content Include="Content\HinhAnhSP\sr004.jpg" />
+    <Content Include="Content\HinhAnhSP\sr005.jpg" />
+    <Content Include="Content\HinhAnhSP\sr006.jpg" />
+    <Content Include="Content\HinhAnhSP\sr011.jpg" />
+    <Content Include="Content\HinhAnhSP\sr012.jpg" />
+    <Content Include="Content\HinhAnhSP\sr013.jpg" />
+    <Content Include="Content\HinhAnhSP\sr014.jpg" />
+    <Content Include="Content\HinhAnhSP\sr015.jpg" />
+    <Content Include="Content\HinhAnhSP\sr016.jpg" />
+    <Content Include="Content\HinhAnhSP\tc001.jpg" />
+    <Content Include="Content\HinhAnhSP\tc002.jpg" />
+    <Content Include="Content\HinhAnhSP\tc003.jpg" />
+    <Content Include="Content\icon\refresh.png" />
+    <Content Include="Content\icon\x.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="obj\Debug\WebLacome.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\WebLacome.dll" />
+    <Content Include="obj\Debug\WebLacome.pdb" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="bin\WebLacome.dll.config" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\Shared\_LayOutAdmin.cshtml" />
+    <Content Include="Areas\Admin\Views\HomeAdmin\ShowProduct.cshtml" />
+    <Content Include="Areas\Admin\Views\HomeAdmin\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\HomeAdmin\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\HomeAdmin\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\HomeAdmin\ShowLoaiMP.cshtml" />
+    <Content Include="Areas\Admin\Views\HomeAdmin\CreateLoai.cshtml" />
+    <Content Include="Areas\Admin\Views\HomeAdmin\EditLoai.cshtml" />
+    <Content Include="Areas\Admin\Views\HomeAdmin\ShowHoaDon.cshtml" />
+    <Content Include="Areas\Admin\Views\HomeAdmin\CreateHD.cshtml" />
+    <Content Include="Areas\Admin\Views\HomeAdmin\EditHD.cshtml" />
+    <Content Include="Areas\Admin\Views\HomeAdmin\ShowKhachHang.cshtml" />
+    <Content Include="Areas\Admin\Views\HomeAdmin\CreateKH.cshtml" />
+    <Content Include="Areas\Admin\Views\HomeAdmin\EditKH.cshtml" />
+    <Content Include="Areas\Admin\Views\HomeAdmin\DetailsLoai.cshtml" />
+    <Content Include="Areas\Admin\Views\HomeAdmin\ShowCTHoaDon.cshtml" />
+    <Content Include="Areas\Admin\Views\HomeAdmin\CreateCTHD.cshtml" />
+    <Content Include="Areas\Admin\Views\HomeAdmin\Index.cshtml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\_RemoveAccountPartial.cshtml" />
+    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Manage.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\MyPham\ShowProducts.cshtml" />
+    <Content Include="Views\MyPham\ShowCategoryList.cshtml" />
+    <Content Include="Views\MyPham\ShowListMPByCTG.cshtml" />
+    <Content Include="Views\MyPham\Home.cshtml" />
+    <Content Include="Views\Shared\_LayOutPage.cshtml" />
+    <Content Include="Views\MyPham\KhamPha.cshtml" />
+    <Content Include="Views\GioHang\GioHang.cshtml" />
+    <Content Include="Views\MyPham\Details.cshtml" />
+    <Content Include="Views\Login\DangNhap.cshtml" />
+    <Content Include="Views\MyPham\SearchProducts.cshtml" />
+    <Content Include="Views\MyPham\DangNhap.cshtml" />
+    <Content Include="Views\User\DangKy.cshtml" />
+    <Content Include="Views\User\DangNhap.cshtml" />
+    <Content Include="Views\MyPham\HomeGioHang.cshtml" />
+    <Content Include="Views\Shared\_LayoutPage1.cshtml" />
+    <Content Include="Views\Shared\_LayoutPage2.cshtml" />
+    <Content Include="Views\MyPham\ThanhToanThanhCong.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>8719</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8719/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

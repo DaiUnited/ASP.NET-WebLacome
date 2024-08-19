@@ -1,0 +1,78 @@
+C:\Users\daiun\Downloads\WebLacome\WebLacome\bin\WebLacome.dll.config
+C:\Users\daiun\Downloads\WebLacome\WebLacome\bin\WebLacome.dll
+C:\Users\daiun\Downloads\WebLacome\WebLacome\bin\WebLacome.pdb
+C:\Users\daiun\Downloads\WebLacome\WebLacome\obj\Debug\WebLacome.csprojResolveAssemblyReference.cache
+C:\Users\daiun\Downloads\WebLacome\WebLacome\obj\Debug\WebLacome.dll
+C:\Users\daiun\Downloads\WebLacome\WebLacome\obj\Debug\WebLacome.pdb
+C:\Users\daiun\Documents\Visual Studio 2013\Projects\WebLacome\WebLacome\bin\WebLacome.dll.config
+C:\Users\daiun\Documents\Visual Studio 2013\Projects\WebLacome\WebLacome\bin\WebLacome.dll
+C:\Users\daiun\Documents\Visual Studio 2013\Projects\WebLacome\WebLacome\bin\WebLacome.pdb
+C:\Users\daiun\Documents\Visual Studio 2013\Projects\WebLacome\WebLacome\obj\Debug\WebLacome.dll
+C:\Users\daiun\Documents\Visual Studio 2013\Projects\WebLacome\WebLacome\obj\Debug\WebLacome.pdb
+C:\Users\Hung Anh\Desktop\WebLacome (1)\WebLacome\WebLacome\bin\WebLacome.dll.config
+C:\Users\Hung Anh\Desktop\WebLacome (1)\WebLacome\WebLacome\bin\WebLacome.dll
+C:\Users\Hung Anh\Desktop\WebLacome (1)\WebLacome\WebLacome\bin\WebLacome.pdb
+C:\Users\Hung Anh\Desktop\WebLacome (1)\WebLacome\WebLacome\obj\Debug\WebLacome.csprojResolveAssemblyReference.cache
+C:\Users\Hung Anh\Desktop\WebLacome (1)\WebLacome\WebLacome\obj\Debug\WebLacome.dll
+C:\Users\Hung Anh\Desktop\WebLacome (1)\WebLacome\WebLacome\obj\Debug\WebLacome.pdb
+C:\Users\daiun\Downloads\Compressed\WebLacome (1)\WebLacome\WebLacome\bin\WebLacome.dll.config
+C:\Users\daiun\Downloads\Compressed\WebLacome (1)\WebLacome\WebLacome\bin\WebLacome.dll
+C:\Users\daiun\Downloads\Compressed\WebLacome (1)\WebLacome\WebLacome\bin\WebLacome.pdb
+C:\Users\daiun\Downloads\Compressed\WebLacome (1)\WebLacome\WebLacome\obj\Debug\WebLacome.csprojResolveAssemblyReference.cache
+C:\Users\daiun\Downloads\Compressed\WebLacome (1)\WebLacome\WebLacome\obj\Debug\WebLacome.dll
+C:\Users\daiun\Downloads\Compressed\WebLacome (1)\WebLacome\WebLacome\obj\Debug\WebLacome.pdb
+C:\Users\daiun\Downloads\Programs\WebLacome (1)\WebLacome\WebLacome\bin\WebLacome.dll.config
+C:\Users\daiun\Downloads\Programs\WebLacome (1)\WebLacome\WebLacome\bin\WebLacome.dll
+C:\Users\daiun\Downloads\Programs\WebLacome (1)\WebLacome\WebLacome\bin\WebLacome.pdb
+C:\Users\daiun\Downloads\Programs\WebLacome (1)\WebLacome\WebLacome\obj\Debug\WebLacome.dll
+C:\Users\daiun\Downloads\Programs\WebLacome (1)\WebLacome\WebLacome\obj\Debug\WebLacome.pdb
+C:\Users\daiun\Downloads\Programs\WebLacome (1)\WebLacome\WebLacome\obj\Debug\WebLacome.csprojResolveAssemblyReference.cache
+C:\Users\daiun\Documents\Visual Studio 2013\Projects\WebLacome (1)\WebLacome\WebLacome\bin\WebLacome.dll.config
+C:\Users\daiun\Documents\Visual Studio 2013\Projects\WebLacome (1)\WebLacome\WebLacome\bin\WebLacome.dll
+C:\Users\daiun\Documents\Visual Studio 2013\Projects\WebLacome (1)\WebLacome\WebLacome\bin\WebLacome.pdb
+C:\Users\daiun\Documents\Visual Studio 2013\Projects\WebLacome (1)\WebLacome\WebLacome\obj\Debug\WebLacome.dll
+C:\Users\daiun\Documents\Visual Studio 2013\Projects\WebLacome (1)\WebLacome\WebLacome\obj\Debug\WebLacome.pdb
+C:\Users\daiun\Documents\Visual Studio 2013\Projects\WebLacome (1)\WebLacome\WebLacome\obj\Debug\WebLacome.csprojResolveAssemblyReference.cache
+C:\Users\daiun\Documents\Visual Studio 2013\Projects\WebLacome\WebLacome\obj\Debug\WebLacome.csprojResolveAssemblyReference.cache
+D:\ĐồÁnLTW\WebLacome2\WebLacome\WebLacome\bin\WebLacome.dll.config
+D:\ĐồÁnLTW\WebLacome2\WebLacome\WebLacome\bin\WebLacome.dll
+D:\ĐồÁnLTW\WebLacome2\WebLacome\WebLacome\bin\WebLacome.pdb
+D:\ĐồÁnLTW\WebLacome2\WebLacome\WebLacome\obj\Debug\WebLacome.csproj.AssemblyReference.cache
+D:\ĐồÁnLTW\WebLacome2\WebLacome\WebLacome\obj\Debug\WebLacome.csproj.CoreCompileInputs.cache
+D:\ĐồÁnLTW\WebLacome2\WebLacome\WebLacome\obj\Debug\WebLacome.csproj.CopyComplete
+D:\ĐồÁnLTW\WebLacome2\WebLacome\WebLacome\obj\Debug\WebLacome.dll
+D:\ĐồÁnLTW\WebLacome2\WebLacome\WebLacome\obj\Debug\WebLacome.pdb
+D:\Download\WebLacome2\WebLacome2\WebLacome\WebLacome\bin\WebLacome.dll.config
+D:\Download\WebLacome2\WebLacome2\WebLacome\WebLacome\bin\WebLacome.dll
+D:\Download\WebLacome2\WebLacome2\WebLacome\WebLacome\bin\WebLacome.pdb
+D:\Download\WebLacome2\WebLacome2\WebLacome\WebLacome\obj\Debug\WebLacome.csproj.AssemblyReference.cache
+D:\Download\WebLacome2\WebLacome2\WebLacome\WebLacome\obj\Debug\WebLacome.csproj.CoreCompileInputs.cache
+D:\Download\WebLacome2\WebLacome2\WebLacome\WebLacome\obj\Debug\WebLacome.csproj.CopyComplete
+D:\Download\WebLacome2\WebLacome2\WebLacome\WebLacome\obj\Debug\WebLacome.dll
+D:\Download\WebLacome2\WebLacome2\WebLacome\WebLacome\obj\Debug\WebLacome.pdb
+C:\Users\Danh\Downloads\học hành như cá kho tiêu\WebLacome2\WebLacome\WebLacome\bin\WebLacome.dll.config
+C:\Users\Danh\Downloads\học hành như cá kho tiêu\WebLacome2\WebLacome\WebLacome\bin\WebLacome.dll
+C:\Users\Danh\Downloads\học hành như cá kho tiêu\WebLacome2\WebLacome\WebLacome\bin\WebLacome.pdb
+C:\Users\Danh\Downloads\học hành như cá kho tiêu\WebLacome2\WebLacome\WebLacome\obj\Debug\WebLacome.csprojResolveAssemblyReference.cache
+C:\Users\Danh\Downloads\học hành như cá kho tiêu\WebLacome2\WebLacome\WebLacome\obj\Debug\WebLacome.dll
+C:\Users\Danh\Downloads\học hành như cá kho tiêu\WebLacome2\WebLacome\WebLacome\obj\Debug\WebLacome.pdb
+C:\Users\daiun\Downloads\Compressed\DoAnNhom11_Web_Laconme\WebLacome - 2\WebLacome\WebLacome\bin\WebLacome.dll.config
+C:\Users\daiun\Downloads\Compressed\DoAnNhom11_Web_Laconme\WebLacome - 2\WebLacome\WebLacome\bin\WebLacome.dll
+C:\Users\daiun\Downloads\Compressed\DoAnNhom11_Web_Laconme\WebLacome - 2\WebLacome\WebLacome\bin\WebLacome.pdb
+C:\Users\daiun\Downloads\Compressed\DoAnNhom11_Web_Laconme\WebLacome - 2\WebLacome\WebLacome\obj\Debug\WebLacome.csproj.AssemblyReference.cache
+C:\Users\daiun\Downloads\Compressed\DoAnNhom11_Web_Laconme\WebLacome - 2\WebLacome\WebLacome\obj\Debug\WebLacome.csproj.CoreCompileInputs.cache
+C:\Users\daiun\Downloads\Compressed\DoAnNhom11_Web_Laconme\WebLacome - 2\WebLacome\WebLacome\obj\Debug\WebLacome.csproj.CopyComplete
+C:\Users\daiun\Downloads\Compressed\DoAnNhom11_Web_Laconme\WebLacome - 2\WebLacome\WebLacome\obj\Debug\WebLacome.dll
+C:\Users\daiun\Downloads\Compressed\DoAnNhom11_Web_Laconme\WebLacome - 2\WebLacome\WebLacome\obj\Debug\WebLacome.pdb
+C:\Users\Danh\Downloads\DoAnNhom11_Web_Laconme\WebLacome - 2\WebLacome\WebLacome\bin\WebLacome.dll.config
+C:\Users\Danh\Downloads\DoAnNhom11_Web_Laconme\WebLacome - 2\WebLacome\WebLacome\bin\WebLacome.dll
+C:\Users\Danh\Downloads\DoAnNhom11_Web_Laconme\WebLacome - 2\WebLacome\WebLacome\bin\WebLacome.pdb
+C:\Users\Danh\Downloads\DoAnNhom11_Web_Laconme\WebLacome - 2\WebLacome\WebLacome\obj\Debug\WebLacome.csprojResolveAssemblyReference.cache
+C:\Users\Danh\Downloads\DoAnNhom11_Web_Laconme\WebLacome - 2\WebLacome\WebLacome\obj\Debug\WebLacome.dll
+C:\Users\Danh\Downloads\DoAnNhom11_Web_Laconme\WebLacome - 2\WebLacome\WebLacome\obj\Debug\WebLacome.pdb
+C:\Users\Danh\Downloads\DoAnNhom11_Web_Laconme 10h33\WebLacome - 2\WebLacome\WebLacome\bin\WebLacome.dll.config
+C:\Users\Danh\Downloads\DoAnNhom11_Web_Laconme 10h33\WebLacome - 2\WebLacome\WebLacome\bin\WebLacome.dll
+C:\Users\Danh\Downloads\DoAnNhom11_Web_Laconme 10h33\WebLacome - 2\WebLacome\WebLacome\bin\WebLacome.pdb
+C:\Users\Danh\Downloads\DoAnNhom11_Web_Laconme 10h33\WebLacome - 2\WebLacome\WebLacome\obj\Debug\WebLacome.csprojResolveAssemblyReference.cache
+C:\Users\Danh\Downloads\DoAnNhom11_Web_Laconme 10h33\WebLacome - 2\WebLacome\WebLacome\obj\Debug\WebLacome.dll
+C:\Users\Danh\Downloads\DoAnNhom11_Web_Laconme 10h33\WebLacome - 2\WebLacome\WebLacome\obj\Debug\WebLacome.pdb

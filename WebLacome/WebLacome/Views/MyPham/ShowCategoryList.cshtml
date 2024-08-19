@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "ShowCategoryList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using WebLacome.Models;
+@model List<LoaiMP>
+<table class="table table-bordered table-responsive">
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td><a href="~/MyPham/ShowListMPByCTG?MALOAI=@item.MALOAI&TENLOAI=@item.TENLOAI" style="text-decoration: none">@item.TENLOAI</a></td>
+        </tr>
+    }
+</table>

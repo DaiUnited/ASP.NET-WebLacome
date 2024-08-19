@@ -1,0 +1,59 @@
+﻿@model IEnumerable<WebLacome.Areas.Admin.Models.CHITIETHOADON>
+
+@{
+    ViewBag.Title = "ShowCTHoaDon";
+    Layout = "~/Areas/Admin/Views/Shared/_LayOutAdmin.cshtml";
+}
+
+<h1 style="text-align:center; margin-top:2rem;">Danh Sách Tất Cả Mỹ Phẩm</h1>
+<nav class="navbar bg-body-tertiary">
+    <p></p>
+    <form action="/Admin/HomeAdmin/ShowCTHoaDon" method="get" class="form_search_product navbar-form navbar-right" style="margin-bottom:2rem; ">
+        <input type="text" name="search" value="" style="background-color: #f5f5f5; border: none; padding: 12px; width: 440px; height: 55px;">
+        <button type="submit" class="" style="background-color: black; color: white;font-size:16px;width: 100px;height: 55px;font-weight: 600; border-radius:5px;">SEARCH</button>
+    </form>
+</nav>
+
+<table class="table table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MAHD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MAMP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SOLUONG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DONGIA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.THANHTIEN)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MAHD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MAMP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SOLUONG)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DONGIA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.THANHTIEN)
+            </td>
+
+        </tr>
+    }
+
+</table>

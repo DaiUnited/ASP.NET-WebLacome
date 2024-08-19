@@ -1,0 +1,37 @@
+﻿@model WebLacome.Areas.Admin.Models.LOAIMP
+
+@{
+    ViewBag.Title = "DetailsLoai";
+    Layout = "~/Areas/Admin/Views/Shared/_LayOutAdmin.cshtml";
+}
+<style>
+    .details {
+        margin: auto;
+        padding-top: inherit;
+    }
+
+    .item {
+        margin: 0.5rem 3rem;
+        text-align: center;
+    }
+</style>
+<h2 style="text-align:center; padding:2rem;">CHI TIẾT LOẠI MỸ PHẨM</h2>
+<div class="details form-control" style="text-align: center; font-weight: 600; padding: 2rem; margin: auto; width: 500px;">
+    <dl class="dl-horizontal item">
+        <dt>
+            @Html.DisplayNameFor(model => model.MALOAI)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MALOAI)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TENLOAI)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TENLOAI)
+        </dd>
+        <p>
+            @Html.ActionLink("Back to List", "ShowLoaiMP")
+        </p>
+    </dl>
+</div>

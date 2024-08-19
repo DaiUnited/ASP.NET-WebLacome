@@ -1,0 +1,99 @@
+﻿@model IEnumerable<WebLacome.Areas.Admin.Models.MYPHAM>
+
+@{
+    ViewBag.Title = "ShowProduct";
+    Layout = "~/Areas/Admin/Views/Shared/_LayOutAdmin.cshtml";
+}
+
+
+
+
+<h1 style="text-align:center; margin-top:2rem;">Danh Sách Tất Cả Mỹ Phẩm</h1>
+<nav class="navbar bg-body-tertiary">
+    <a href="/Admin/HomeAdmin/Create"><button class="" style="margin-left:1rem; padding: 3px; font-size: 16px; width: 100px; height: 55px; font-weight: 600; background-color: black; color: white; font-weight: 600; border-radius: 5px;">Create</button></a>
+    <form action="https://localhost:44323/Admin/HomeAdmin/ShowProduct" method="get" class="form_search_product navbar-form navbar-right" style="margin-bottom:2rem; ">
+        <input type="text" name="search" value="" style="background-color: #f5f5f5; border: none; padding: 12px; width: 440px; height: 55px;">
+        <button type="submit" class="" style="background-color: black; color: white;font-size:16px;width: 100px;height: 55px;font-weight: 600; border-radius:5px;">SEARCH</button>
+    </form>
+</nav>
+
+<table class="table table-striped">
+
+    <tr>
+
+        <th>
+            @Html.DisplayNameFor(model => model.MAMP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TENMP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ANH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NGAYSX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TGBH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MALOAI)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NSX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DVT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GIA)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MAMP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TENMP)
+            </td>
+            <td>
+                <img src="~/Areas/Admin/Content/image/@Html.DisplayFor(modelItem => item.ANH)" alt="Alternate Text" style="width:100px" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NGAYSX)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TGBH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MALOAI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NSX)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DVT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GIA)
+            </td>
+            <td>
+
+
+                <a href="/Admin/HomeAdmin/DeleteProduct?MaMyPham=@item.MAMP"><button class="btn_TC btn_delete" style="padding: 3px; background-color: black; color: white; font-weight: 600; border-radius: 5px;">Delete</button></a>
+                <br />
+                <a href="/Admin/HomeAdmin/Edit/@item.MAMP"><button class="btn_TC btn_delete" style="padding: 3px; background-color: black; color: white; font-weight: 600; border-radius: 5px;">Edit</button></a><br />
+                <a href="/Admin/HomeAdmin/Details/@item.MAMP"><button class="btn_TC btn_delete" style="padding: 3px; background-color: black; color: white; font-weight: 600; border-radius: 5px;">Details</button></a>
+
+            </td>
+
+
+
+        </tr>
+    }
+
+</table>

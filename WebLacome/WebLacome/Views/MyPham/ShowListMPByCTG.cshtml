@@ -1,0 +1,59 @@
+﻿@model IEnumerable<WebLacome.Models.MyPham>
+
+@{
+    ViewBag.Title = "ShowListMPByCTG";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .product {
+        font-family: 'Arial', sans-serif;
+        color: #333;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        width: 100%;
+    }
+</style>
+
+
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-3 product" style="margin-top:5px;text-align:center; justify-content:space-between; display:flex;">
+            <table class="chitiet">
+                <tr>
+                    <td>
+                        <a href="~/MyPham/Details?MAMP=@item.MAMP">
+                            <img src="@Url.Content("~/Content/HinhAnhSP/"+item.ANH)" />
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><h5>@Html.DisplayFor(modelItem => item.TENMP)</h5></td>
+                </tr>
+                <tr>
+                    <td><h5>@Html.DisplayFor(modelItem => item.GIA)<span>đ</span></h5></td>
+
+                </tr>
+                <tr>
+                    <td><a href="~/MyPham/Details?MAMP=@item.MAMP"><button class="col-sm-12 btn btn-dark" style="padding: 3px; background-color: black; line-height: 32px; color: white; font-weight: 200; border-radius: 5px;">Xem Chi Tiết</button></a></td>
+
+                </tr>
+
+            </table>
+            @*<a href="~/MyPham/Details?MAMP=@item.MAMP">
+                    <img src="@Url.Content("~/Content/HinhAnhSP/"+item.ANH)" />
+                </a>
+                <h5>@Html.DisplayFor(modelItem => item.TENMP)</h5>
+                <h5>@Html.DisplayFor(modelItem => item.GIA)<span>đ</span></h5>
+                @Html.ActionLink("Xem Chi Tiết", "Details", new { MAMP =item.MAMP.Trim() })*@
+        </div>
+
+    }
+
+</div>

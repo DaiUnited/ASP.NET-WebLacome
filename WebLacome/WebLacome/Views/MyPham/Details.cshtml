@@ -1,0 +1,60 @@
+﻿@model WebLacome.Models.MyPham
+@using WebLacome.Models;
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ChiTietSach</title>
+    <style>
+        .chitiet {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-control" style="padding:2rem;">
+        <table class="chitiet" style="margin:auto;">
+            <tr>
+                <td rowspan="6"><img src="~/Content/HinhAnhSP/@Model.ANH" style="width:300px; padding:1rem;" /></td>
+                <td style="font-weight:500;">Tên Mỹ Phẩm:</td>
+                <td>@Model.TENMP</td>
+            </tr>
+            <tr>
+                <td style="font-weight:500;">Nhà Sản Xuất:</td>
+                <td>@Model.NSX</td>
+            </tr>
+            <tr>
+                <td style="font-weight:500;">Ngày Sản Xuất:</td>
+                <td>@Model.NGAYSX</td>
+            </tr>
+            <tr>
+                <td style="font-weight:500;">Thời Gian Bảo Hành: </td>
+                <td>@Model.TGBH Tháng</td>
+            </tr>
+            <tr>
+                <td style="font-weight:500;">Đơn Vị Tính:</td>
+                <td>@Model.DVT</td>
+            </tr>
+            <tr>
+                <td style="font-weight:500;">Giá bán:</td>
+                <td style="color:red">@Model.GIA <span>đ</span></td>
+            </tr>
+        </table>
+        <div style="text-align:center;padding-top:1rem;">
+            <a href="@Url.Action("AddGioHang", "MyPham", new { @MAMP = Model.MAMP, @strURL = Request.Url.ToString() })">
+                <input type="submit" value="THÊM VÀO GIỎ HÀNG" class="btn btn-dark" />
+            </a>
+            <a href="/MyPham/ShowProducts">
+                <input type="submit" value="MUA TIẾP" class="btn btn-dark" />
+            </a>
+        </div>
+
+    </div>
+</body>
+</html>

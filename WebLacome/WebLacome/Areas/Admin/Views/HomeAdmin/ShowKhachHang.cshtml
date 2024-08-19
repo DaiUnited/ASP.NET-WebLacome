@@ -1,0 +1,56 @@
+﻿@model IEnumerable<WebLacome.Areas.Admin.Models.KHACHHANG>
+
+@{
+    ViewBag.Title = "ShowKhachHang";
+    Layout = "~/Areas/Admin/Views/Shared/_LayOutAdmin.cshtml";
+}
+
+<h1 style="text-align:center; margin-top:2rem;">Danh Sách Tất Cả Khách Hàng</h1>
+<nav class="navbar bg-body-tertiary">
+    <a href="/Admin/HomeAdmin/CreateKH"><button class="" style="margin-left:1rem; padding: 3px; font-size: 16px; width: 100px; height: 55px; font-weight: 600; background-color: black; color: white; font-weight: 600; border-radius: 5px;">Create</button></a>
+    <form action="/Admin/HomeAdmin/ShowKhachHang" method="get" class="form_search_product navbar-form navbar-right" style="margin-bottom:2rem; ">
+        <input type="text" name="search" value="" style="background-color: #f5f5f5; border: none; padding: 12px; width: 440px; height: 55px;">
+        <button type="submit" class="" style="background-color: black; color: white;font-size:16px;width: 100px;height: 55px;font-weight: 600; border-radius:5px;">SEARCH</button>
+    </form>
+</nav>
+
+<table class="table table-striped">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MAKH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TENKH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DCHI)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DTHOAI)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MAKH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TENKH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DCHI)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DTHOAI)
+            </td>
+            <td>
+                <a href="/Admin/HomeAdmin/EditKH/@item.MAKH"><button class="btn_TC btn_delete" style="padding: 3px; background-color: black; color: white; font-weight: 600; border-radius: 5px;">Edit</button></a>
+                <a href="/Admin/HomeAdmin/DeleteKH?MaKH=@item.MAKH"><button class="btn_TC btn_delete" style="padding: 3px; background-color: black; color: white; font-weight: 600; border-radius: 5px;">Delete</button></a>
+            </td>
+        </tr>
+    }
+
+</table>
